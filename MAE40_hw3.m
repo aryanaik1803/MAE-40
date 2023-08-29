@@ -13,7 +13,7 @@ Vo=simplify(x(1))
 omega=10;
 Q = 5;
 F_LPF2_damped=RR_tf([omega/Q 0],[1 omega/Q omega^2]);
-figure(4); RR_bode(F_LPF2_damped)
+figure(1); RR_bode(F_LPF2_damped)
 F_LPF3_damped=RR_tf([.5*omega/Q 0],[1 .5*omega/Q omega^2]);
 
 g.linestyle = "-.";RR_bode(F_LPF3_damped,g)
