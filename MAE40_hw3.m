@@ -1,6 +1,5 @@
 %Question 1
 clear, close all, syms s Vi C L R Rload c1
-% Damped second-order low-pass LC filter: Solve for Vo as a function of Vi
 % x={Vo, Vm, Ic, I_L, Ir, Ir_load}  <-- unknown vector
 A  =[ 0  0   1  -1 0 0;    % Ic -I_L = 0
      0  0 1 0 -1 -1;    % Ic - Ir - Ir_load = 0
