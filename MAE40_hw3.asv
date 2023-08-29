@@ -35,9 +35,4 @@ legend('V(t)', 'I(t)', 'P(t)')
 hold off
 %%
 % plot of P_diodes
-% diodes only slightly change voltage, hence delta V is very small
-clear all;
-P_diode = @(t) .5 *abs(10*sin(10*t))
-fplot(P_diode)
-e = @(t) (.5 *abs(10*sin(10*t)))/((.5 *abs(10*sin(10*t))) + (abs(10*sin(10*t))*(abs(10*sin(10*t))/20)));
-fplot(e)
+% 
