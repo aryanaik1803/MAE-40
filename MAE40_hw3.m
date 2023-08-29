@@ -18,6 +18,7 @@ F_LPF3_damped=RR_tf([.5*omega/Q 0],[1 .5*omega/Q omega^2]);
 
 g.linestyle = "-.";RR_bode(F_LPF3_damped,g)
 %% 
+%Question 2
 %plot of V
 omega = 10;
 V = @(t) abs(10*sin(omega*t));
